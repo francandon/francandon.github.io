@@ -4,12 +4,12 @@
     "label": "PhD Student",
     "image": "",
     "email": "francandon@unizar.es",
-    "phone": ,
+    "phone": "",
     "url": "https://www.linkedin.com/in/francisco-rodr%C3%ADguez-cand%C3%B3n-8b33192b",
     "summary": "PhD student in Astrophysics",
     "location": {
-      "address": ,
-      "postalCode": ,
+      "address": "": ,
+      "postalCode": "",
       "city": "Zaragoza",
       "countryCode": "ES",
       "region": "Aragon"
