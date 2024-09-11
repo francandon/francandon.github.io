@@ -8,11 +8,11 @@ middle_name: R.
 last_name: Candon
 email: francandon@unizar.es
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+    Francisco Rodríguez Candón's personal website, featuring research insights, academic publications, and professional projects in Astrophysics.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: PhD, Astrophysics, Astronomy, NuSTAR
 lang: en, es # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: √ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
