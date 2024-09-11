@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About me
+title: "About me"
 permalink: /
 subtitle: <a href='#'>PhD Student</a> Universidad de Zaragoza
 
