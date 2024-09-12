@@ -4,4 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - rest-for-physics / framework
+  - name: "rest-for-physics/framework"
+    url: "https://github.com/rest-for-physics/framework"
+    description: "High Energy physisc toolkit"
+
