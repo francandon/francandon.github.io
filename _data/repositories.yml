@@ -4,5 +4,6 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - name: "rest-for-physics/framework"
+  - francandon/TFM-Code
+  - mathieukaltschmidt/57fe-axions-mesa
 
