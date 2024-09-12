@@ -15,7 +15,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: PhD, Astrophysics, Astronomy, NuSTAR
 lang: en, es # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: √ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: σ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://francandon.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
