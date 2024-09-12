@@ -5,6 +5,4 @@ repo_description_lines_max: 2
 
 github_repos:
   - name: "rest-for-physics/framework"
-    url: "https://github.com/rest-for-physics/framework"
-    description: "High Energy physisc toolkit"
 
