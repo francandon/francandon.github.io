@@ -1,36 +1,16 @@
 ---
 layout: post
-title: a post with formatting and links
-date: 2015-03-15 16:40:16
-description: march & april, looking forward to summer
+title: The Dark Matter Search
+date: 2024-09-12 11:40
+description: Dark Matter is one of the most intriguing topics in Physics, yet Unkown
 tags: formatting links
-categories: sample-posts
+categories: science
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. [Pinterest](https://www.pinterest.com) DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+<h2>Unveiling the Mysteries of Dark Matter and Dark Energy in Modern Astrophysics</h2>
 
-#### Hipster list
+<p>Our knowledge of cosmic physics is vast and diverse, covering countless fields of research—from the subatomic particles that make up the Standard Model to the colossal structures of the universe. However, the deeper we delve into the fundamental workings of the cosmos, the more questions these advancements leave us with.</p>
 
-- brunch
-- fixie
-- raybans
-- messenger bag
+<p>In modern astrophysics, two major mysteries captivate the scientific community: the problems of <em>dark matter</em> and <em>dark energy</em>. These issues arise from discrepancies between astronomical observations of mass and energy in various galactic and extragalactic systems and the predictions derived from the theory of general relativity. These discrepancies suggest: 1) the presence of undetected dark matter-energy, 2) our current understanding of gravity is incorrect at these scales, or 3) a combination of both.</p>
 
-#### Check List
-
-- [x] Brush Teeth
-- [ ] Put on socks
-  - [x] Put on left sock
-  - [ ] Put on right sock
-- [x] Go to school
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
-
-<hr>
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+<p>Extensive experimental evidence supports the first option. This begins with mass discrepancies observed in the rotational curves of spiral galaxies [Rubin, 1980], extends to studies of anisotropies in the Cosmic Microwave Background (CMB) [Hinshaw et al., 2013], and includes analyses of Type II supernovae. Currently, this cosmological paradigm, known as the <span style="font-family: 'Times New Roman', serif;">&Lambda;</span>CDM model, is the most widely accepted by the scientific community. It posits the existence of a dark component to the universe's total mass and energy: <span style="font-family: 'Times New Roman', serif;">&Lambda;</span> represents the cosmological constant (dark energy), while CDM stands for Cold Dark Matter, referring to non-relativistic dark matter.</p>
