@@ -13,26 +13,21 @@
   contents:
     - title: PhD
       institution: University of Dortmund, Dortmund, Germany
-      year: 1905
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - X-ray Astronomy
+
     - title: Degree in physics 
       institution: Universidad de Salamanca, Salamanca, Spain
       year: 2022
       description:
-        - Description 1.
-        - Description 2.
+        - Specialized in theoretical physics 
     - title: Master in Physics of the Universe 
       institution: Universidad de Zaragoza, Zaragoza, Spain
       year: 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Specialized in Astrophysics
+      Master Thesis: Magnetar Studies using X-ray Telescopes
 
 - title: Experience
   type: time_table
@@ -41,7 +36,7 @@
       institution: Center for Astroparticles and High Energy Physics (CAPA), Universidad de Zaragoza
       year: 2023 - Current
       description:
-        - Description 1.
+        - Researching axion searches within the IAXO collaboration
     - title: Intership Student 
       institution: Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT), Madrid, Spain
       year: 2022
