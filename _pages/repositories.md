@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+title: Repositories
+description: During my career I've contribuited to several repositories, as restForPhysics for the IAXO acollaboration
 nav: true
 nav_order: 4
 ---
