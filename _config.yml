@@ -10,12 +10,11 @@ email: francandon@unizar.es
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
     Francisco Rodríguez Candón's personal website, featuring research insights, academic publications, and professional projects in Astrophysics.
 footer_text: >
-  &copy Francisco Rodríguez Candón {year}
 keywords: PhD, Astrophysics, Astronomy, NuSTAR
 lang: en, es # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ◩ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://francandon.com # the base hostname & protocol for your site
+url: https://francandon.github.io/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
