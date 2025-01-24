@@ -191,14 +191,14 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Vertically align the image and text */
-  justify-content: flex-start; /* Ensure items are aligned to the left */
-  gap: 20px; /* Space between the image and the text */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center-align items */
+  gap: 10px; /* Add spacing between the image and the text */
 }
 
 .profile-image {
-  max-width: 150px; /* Limit the image width */
+  max-width: 70px; /* Limit the image width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%; /* Keep circular shape for circular images */
 }
@@ -206,11 +206,11 @@ ul.task-list input[type="checkbox"] {
 .more-info {
   display: flex;
   flex-direction: column; /* Stack email and additional details vertically */
-  justify-content: center; /* Center-align text with the image */
+  justify-content: center; /* Align text */
   font-family: monospace;
+  text-align: center; /* Center-align the text under the image */
   line-height: 1.5; /* Add spacing between lines of text */
 }
-
 .profile.float-right {
   flex-direction: row-reverse; /* Place image on the right */
 }
