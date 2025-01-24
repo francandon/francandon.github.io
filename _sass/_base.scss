@@ -193,7 +193,10 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
+  width: 100%; /* Default to full width for flexibility */
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+  gap: 20px; /* Add space between the image and text */
 
   .more-info {
     margin-bottom: 5px;
@@ -206,26 +209,33 @@ ul.task-list input[type="checkbox"] {
     }
   }
 }
+.profile-image {
+  max-width: 150px; /* Limit the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Keep circular shape for circular images */
+  margin: 10px 0; /* Add spacing around the image */
+}
+
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 20px; /* Space between image and text */
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 20px; /* Space between image and text */
 }
 
-@media (min-width: 576px) {
+@media (max-width: 768px) {
   .profile {
-    width: 30%;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center both items */
+  }
 
-    .address {
-      p {
-        display: block;
-      }
-    }
+  .profile-image {
+    margin-bottom: 20px; /* Add space below the image */
   }
 }
+
 
 .post-description {
   margin-bottom: 2rem;
