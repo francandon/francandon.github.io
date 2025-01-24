@@ -11,7 +11,7 @@ profile:
 
 
 news: false # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 I studied Physics at the University of Salamanca, where I discovered my passion for phenomenological physics, particularly in the context of astrophysical objects and Dark Matter. Consequently, I pursued a Master's degree in "Physics of the Universe" at the University of Zaragoza, renowned for its Dark Matter experts, both theoretical and experimental.
