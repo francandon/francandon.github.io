@@ -203,14 +203,6 @@ ul.task-list input[type="checkbox"] {
   border-radius: 50%; /* Keep circular shape for circular images */
 }
 
-.more-info {
-  display: flex;
-  flex-direction: column; /* Stack email and additional details vertically */
-  justify-content: center; /* Align text */
-  font-family: monospace;
-  text-align: center; /* Center-align the text under the image */
-  line-height: 1.5; /* Add spacing between lines of text */
-}
 .profile.float-right {
   flex-direction: row-reverse; /* Place image on the right */
 }
