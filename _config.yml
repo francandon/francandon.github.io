@@ -130,18 +130,21 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Diario # blog_name will be displayed in your blog page
-blog_description: Life moves, so do my blog
-permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
-
-# Pagination
+blog_name: # (leave blank or delete this line)
+blog_description: # (leave blank or delete this line)
+permalink: # (leave blank or delete this line)
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
-  enabled: true
-  max_related: 5
+  enabled: false
+  max_related: 0
+
+latest_posts:
+  enabled: false # Disable the latest posts section
+  scrollable: false
+  limit: 0
+
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
