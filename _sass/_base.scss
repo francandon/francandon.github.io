@@ -1311,13 +1311,20 @@ ninja-keys::part(ninja-input-wrapper) {
   height: 100vh; /* Full viewport height */
 }
 
+.youtube-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 50px 0; /* Optional: Add spacing above and below the video */
+}
+
 .youtube-video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  max-width: 560px; /* Optional: Limit maximum width */
-  width: 100%;
+  max-width: 560px; /* Optional: Limit max width of the video */
+  width: 100%; /* Make it responsive */
 }
 
 .youtube-video iframe {
@@ -1327,4 +1334,3 @@ ninja-keys::part(ninja-input-wrapper) {
   width: 100%;
   height: 100%;
 }
-
