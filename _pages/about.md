@@ -24,6 +24,13 @@ At Zaragoza, the IAXO group offered me a two-year contract to develop programmin
 </h2>
 {% include selected_papers.liquid %}
 
+<!-- Social Media Manager Text -->
+<h2>
+  <a href="https://www.youtube.com/@CAPAUnizar" style="color: inherit">
+    Social media manager in @CAPAUnizar
+  </a>
+</h2>
+
 <!-- YouTube Video Section -->
 <div class="youtube-container">
   <div class="youtube-video">
