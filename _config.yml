@@ -217,7 +217,9 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include:
+  - google3360d5c0da7be7b6.html
+  - "_pages"
 exclude:
   - bin/
   - CONTRIBUTING.md
