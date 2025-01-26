@@ -198,7 +198,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile-image {
-  max-width: 400px !important; /* Override conflicting rules */
+  max-width: 200px !important; /* Override conflicting rules */
   width: 100%; /* Ensure the image scales correctly */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%; /* Keep circular shape for circular images */
