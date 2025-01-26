@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
 
-
+# includes social icons at the bottom of the page
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,7 +27,7 @@ At Zaragoza, the IAXO group offered me a two-year contract to develop programmin
 <!-- Social Media Manager Text -->
 <h2>
   <a href="https://www.youtube.com/@CAPAUnizar" style="color: inherit">
-    Social media manager in @CAPAUnizar
+    Social media manager in CAPAUnizar
   </a>
 </h2>
 
