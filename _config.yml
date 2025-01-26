@@ -218,8 +218,8 @@ kramdown:
 
 # Includes & excludes
 include:
-  - google3360d5c0da7be7b6.html
   - "_pages"
+  - google3360d5c0da7be7b6.html
 exclude:
   - bin/
   - CONTRIBUTING.md
