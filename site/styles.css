@@ -301,9 +301,11 @@ main {
 }
 
 .portrait {
+  display: block;
   align-self: start;
   width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: auto !important;
   aspect-ratio: auto;
   border-radius: 3px;
 }
