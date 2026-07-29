@@ -301,11 +301,11 @@ main {
 }
 
 .portrait {
+  align-self: start;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: auto;
+  aspect-ratio: auto;
   border-radius: 3px;
-  object-fit: cover;
-  object-position: center 28%;
 }
 
 .lead {
