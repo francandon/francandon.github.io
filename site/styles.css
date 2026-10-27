@@ -26,6 +26,20 @@ a:focus-visible,button:focus-visible{outline:2px solid #2338D6;outline-offset:3p
 main:focus{outline:none}
 img{max-width:100%}
 
+/* Language switch (EN | ES): right of the navigation on wide screens,
+   next to the name on narrow ones, with the navigation on its own row. */
+header > .nav{margin-left:auto}
+.lang{display:inline-flex;align-self:center;border:1px solid #2338D6;border-radius:999px;overflow:hidden;font-size:12px;letter-spacing:0.05em;line-height:1}
+.lang > *{display:inline-flex;align-items:center;min-height:32px;padding:0 11px;box-sizing:border-box}
+.lang a{text-decoration:none}
+.lang a:hover{background:rgba(35,56,214,0.1);text-decoration:none}
+@media (max-width:900px){header.wrap{column-gap:12px !important}header > .lang{order:2}header > .nav{order:3;flex-basis:100%;margin-left:0}.lang > *{padding:0 9px}}
+/* Spanish home title is two letters longer than the English one */
+html[lang="es"] #home-title{font-size:clamp(2.5rem,13vw,11.75rem) !important}
+/* ...and its long second line needs the full width, so the portrait starts below it */
+@media (min-width:821px){html[lang="es"] #home-title ~ .hero-photo{grid-row:2;margin-top:40px !important}}
+.lang .on{background:#2338D6;color:#FBFAF7}
+
 /* Motion: the hero rises in on load (pure CSS), and the rest of the page
    fades up gently as it scrolls into view (app.js adds .reveal / .is-in). */
 html{scroll-behavior:smooth}

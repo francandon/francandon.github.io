@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://francandon.com/</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://francandon.com/research.html</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://francandon.com/talks.html</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://francandon.com/outreach.html</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://francandon.com/cv.html</loc><lastmod>2026-10-27</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://francandon.com/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/es/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/research.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/research.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/es/research.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/research.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/talks.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/talks.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/talks.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/es/talks.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/talks.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/talks.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/outreach.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/outreach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/outreach.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/es/outreach.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/outreach.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/outreach.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/cv.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/cv.html"/>
+  </url>
+  <url>
+    <loc>https://francandon.com/es/cv.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francandon.com/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://francandon.com/es/cv.html"/>
+  </url>
 </urlset>

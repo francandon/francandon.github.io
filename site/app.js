@@ -66,7 +66,7 @@
       c.querySelector('.n').textContent = items.filter(function (el) { return matches(el, k); }).length;
     });
     led.setAttribute('aria-pressed', String(ledOnly));
-    count.textContent = 'Showing ' + shown + ' of ' + items.length;
+    count.textContent = (document.documentElement.lang === 'es' ? 'Mostrando ' + shown + ' de ' : 'Showing ' + shown + ' of ') + items.length;
   }
   chips.forEach(function (c) {
     c.addEventListener('click', function () { kind = c.getAttribute('data-filter'); update(); });
