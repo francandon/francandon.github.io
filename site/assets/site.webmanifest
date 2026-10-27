@@ -1,0 +1,11 @@
+{
+  "name": "Francisco R. Candón",
+  "short_name": "FRC",
+  "icons": [
+    { "src": "/assets/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/assets/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#2338D6",
+  "background_color": "#F2F1EE",
+  "display": "standalone"
+}

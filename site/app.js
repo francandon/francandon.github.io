@@ -1,76 +1,46 @@
-(() => {
-  const views = [...document.querySelectorAll("[data-view]")];
-  const viewLinks = [...document.querySelectorAll("[data-view-link]")];
-  const knownViews = new Set(views.map((view) => view.dataset.view));
-  const title = "Francisco R. Candón — Astroparticle Physics";
-  const titles = {
-    bio: `Bio & CV — ${title}`,
-    research: `Research — ${title}`,
-    talks: `Talks — ${title}`,
-    outreach: `Outreach — ${title}`,
-  };
+// francandon.github.io
 
-  function currentRoute() {
-    const hash = window.location.hash.slice(1);
+// The old site was a single page with #research, #talks... views.
+// Send those links to the new pages.
+(function () {
+  var map = { '#research': 'research.html', '#talks': 'talks.html', '#outreach': 'outreach.html', '#bio': 'cv.html', '#cv': 'cv.html', '#notes': 'index.html' };
+  var onHome = /(^|\/)(index\.html)?$/.test(location.pathname);
+  if (onHome && map[location.hash] && map[location.hash] !== 'index.html') location.replace(map[location.hash]);
+})();
 
-    if (knownViews.has(hash)) {
-      return { view: hash, anchor: null };
-    }
-
-    if (hash === "notes" || hash === "contact" || hash === "about") {
-      return { view: "home", anchor: hash };
-    }
-
-    return { view: "home", anchor: null };
+// Publication filters on the research page.
+(function () {
+  var list = document.getElementById('pub-list');
+  var bar = document.getElementById('pub-filters');
+  if (!list || !bar) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll('[data-kind]'));
+  var chips = Array.prototype.slice.call(bar.querySelectorAll('[data-filter]'));
+  var led = document.getElementById('led-toggle');
+  var count = document.getElementById('pub-count');
+  var kind = 'all';
+  var ledOnly = false;
+  function matches(el, k) {
+    return (k === 'all' || el.getAttribute('data-kind') === k) && (!ledOnly || el.getAttribute('data-led') === 'true');
   }
-
-  function showRoute({ view, anchor }, options = {}) {
-    const { focus = false } = options;
-
-    for (const panel of views) {
-      panel.hidden = panel.dataset.view !== view;
-    }
-
-    for (const link of viewLinks) {
-      const isCurrent = link.dataset.viewLink === view;
-
-      if (isCurrent) {
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.removeAttribute("aria-current");
-      }
-    }
-
-    document.title = titles[view] || title;
-
-    requestAnimationFrame(() => {
-      if (anchor) {
-        document.getElementById(anchor)?.scrollIntoView();
-      } else {
-        window.scrollTo({ top: 0, behavior: "auto" });
-      }
-
-      if (focus) {
-        document.getElementById("main-content")?.focus({ preventScroll: true });
-      }
+  function update() {
+    var shown = 0;
+    items.forEach(function (el) {
+      var ok = matches(el, kind);
+      el.hidden = !ok;
+      if (ok) shown++;
     });
+    chips.forEach(function (c) {
+      var k = c.getAttribute('data-filter');
+      c.setAttribute('aria-pressed', String(k === kind));
+      c.querySelector('.n').textContent = items.filter(function (el) { return matches(el, k); }).length;
+    });
+    led.setAttribute('aria-pressed', String(ledOnly));
+    count.textContent = 'Showing ' + shown + ' of ' + items.length;
   }
-
-  window.addEventListener("hashchange", () => showRoute(currentRoute(), { focus: true }));
-
-  document.addEventListener("click", (event) => {
-    const link = event.target.closest('a[href^="#"]');
-    if (!link) return;
-
-    const hash = link.getAttribute("href").slice(1);
-
-    if (!hash) return;
-
-    if (window.location.hash.slice(1) === hash) {
-      event.preventDefault();
-      showRoute(currentRoute(), { focus: Boolean(link.dataset.viewLink) });
-    }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () { kind = c.getAttribute('data-filter'); update(); });
   });
-
-  showRoute(currentRoute());
+  led.addEventListener('click', function () { ledOnly = !ledOnly; update(); });
+  bar.hidden = false;
+  update();
 })();
