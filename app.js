@@ -8,6 +8,37 @@
   if (onHome && map[location.hash] && map[location.hash] !== 'index.html') location.replace(map[location.hash]);
 })();
 
+// Gentle fade-up as content scrolls into view. Anything already on screen
+// when the page loads is left alone, so nothing flickers.
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var selector = [
+    'main h2', 'main section > p', 'main figure', 'main article', 'main ol > li',
+    'main ul > li', 'main dl > div', 'main section > div > p', 'footer .wrap > *'
+  ].join(',');
+  var picked = [];
+  var perParent = new Map();
+  Array.prototype.forEach.call(document.querySelectorAll(selector), function (el) {
+    if (el.closest('.hero')) return;
+    for (var i = 0; i < picked.length; i++) { if (picked[i].contains(el)) return; }
+    if (el.getBoundingClientRect().top < window.innerHeight) return;
+    picked.push(el);
+    var n = perParent.get(el.parentElement) || 0;
+    perParent.set(el.parentElement, n + 1);
+    el.style.setProperty('--reveal-delay', Math.min(n, 3) * 90 + 'ms');
+    el.classList.add('reveal');
+  });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-in');
+      io.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px', threshold: 0.12 });
+  picked.forEach(function (el) { io.observe(el); });
+})();
+
 // Publication filters on the research page.
 (function () {
   var list = document.getElementById('pub-list');
