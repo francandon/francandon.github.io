@@ -1,4 +1,4 @@
-// francandon.github.io
+// francandon.com
 
 // The old site was a single page with #research, #talks... views.
 // Send those links to the new pages.
