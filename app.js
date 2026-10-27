@@ -29,14 +29,22 @@
     el.style.setProperty('--reveal-delay', Math.min(n, 3) * 90 + 'ms');
     el.classList.add('reveal');
   });
+  // Reveal once the top of an element is a little way into the screen, so the
+  // movement happens where it can be seen (also on phones, where tall images
+  // would otherwise finish animating below the fold).
+  function show(el) { el.classList.add('is-in'); io.unobserve(el); }
   var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('is-in');
-      io.unobserve(entry.target);
-    });
-  }, { rootMargin: '0px', threshold: 0.12 });
+    entries.forEach(function (entry) { if (entry.isIntersecting) show(entry.target); });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0 });
   picked.forEach(function (el) { io.observe(el); });
+  // Whatever sits in the last strip of the page can never pass that line,
+  // so reveal the rest when the reader reaches the bottom.
+  function atBottom() {
+    if (window.innerHeight + window.scrollY < document.documentElement.scrollHeight - 4) return;
+    picked.forEach(function (el) { if (!el.classList.contains('is-in')) show(el); });
+    window.removeEventListener('scroll', atBottom);
+  }
+  window.addEventListener('scroll', atBottom, { passive: true });
 })();
 
 // Publication filters on the research page.
